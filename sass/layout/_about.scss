@@ -1,0 +1,61 @@
+#about-wrapper{
+	min-height: 500px;
+	background: url(../img/header-bg.jpg) no-repeat;
+	&::after{
+		background: url(../img/header-after-white.png) no-repeat;
+		background-position: center;
+    	background-size: cover;
+		@media only screen and (min-width: 1500px) and (max-width: 1920px){
+			height: 245px;
+		}
+	}
+}
+.about-text-section{
+	background-color: #fff;
+	height: auto;
+	width: 100%;
+	padding-bottom: 40px;
+
+	.about-us{
+		text-align: center;
+		img{
+			max-height: 82px;
+			max-width: 78px;
+			margin-bottom: 10px;
+		}
+		h1{
+			font-size: $common-md-title;
+			font-weight: $semibold-text;
+			text-align: center;
+			margin-top: 0px;
+			margin-bottom: 40px;
+			text-transform: uppercase;
+		}
+		p{
+			margin-top: 15px;
+			text-align: center;
+			font-size: $common-text;
+			margin-bottom: 40px;
+		}
+	}
+}
+
+//News letter START
+#about-contact{
+	background: url(../img/homepage/news.jpg) no-repeat;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	min-height: 625px;
+	padding-top: 60px;
+	padding-bottom: 60px;
+
+	.footer-sub-title{
+		font-size: 20px;
+		font-weight: 400;
+		margin-bottom: 35px;
+	}
+	button{
+		padding: 12px 70px;
+	}
+}

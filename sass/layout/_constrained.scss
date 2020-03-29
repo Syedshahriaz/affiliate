@@ -1,0 +1,76 @@
+/* ==|====================
+   Layout/Constrained
+   ======================= */
+ main{
+ 	position: relative;
+ }
+.page-wrapper{
+	max-width: 1350px;
+    margin: 0 auto;
+    float: none;
+    overflow: hidden;
+
+    @media only screen and (min-width:1351px){
+		max-width: 1920px;
+    }
+}
+.l-constrained {
+    max-width: $wrapper-width;
+    padding: 0 pxtoem(20,16);
+    margin: 0 auto;
+}
+.wrapper{
+	padding-left: 50px;
+	padding-right: 50px;
+}
+.wrapper-pLeft{
+	padding-left: 100px;
+}
+.main-nav{
+	position: absolute;
+	top: 20px;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    @media only screen and (min-width: 320px) and (max-width: 767px){
+		top: 20px;
+    }
+}
+.common-main-wrapper{
+	background-size: cover !important;
+	background-position: center;
+	position: relative;
+	margin-top: 0px;
+    padding-top: 80px;
+	&::after {
+	    content: '';
+	    background: url(../img/header-after.png) no-repeat;
+	    height: 175px;
+	    width: 100%;
+	    display: block;
+	    position: absolute;
+	    left: 0;
+	    bottom: -1px;
+	    background-size: cover;
+
+	    @media only screen and (min-width: 1500px){
+	    	height: 255px;
+	    }
+	}
+}
+.common-intro{
+	min-height: 600px;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	background: url(../img/header-rest.jpg);
+
+	@media only screen and (max-width: 767px){
+   	 	min-height: 200px;
+	}
+}
+.common-main-wrapper{
+	.navbar{
+		margin-bottom: 0;
+	}
+}

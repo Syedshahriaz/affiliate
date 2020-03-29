@@ -1,0 +1,135 @@
+/* ==|====================
+   Layout/Footer
+   ======================= */
+
+.l-footer {
+	background: url(../img/homepage/footer-bg.png) no-repeat;
+    background-size: cover;
+    position: relative;
+    min-height: 645px;
+    margin-top: -520px;
+
+    @media only screen and (max-width:767px){
+    	background-size: initial;
+    	margin-top: -230px;
+    	background-size: cover;
+
+    	.input-group{
+			.form-control{ 
+			    height: 60px;
+			    font-size: 15px;
+			    padding: 0 190px 0 40px;
+			}
+		}
+		.footer-bottom{
+			position: relative;
+			margin-top: 40px;
+			.footer-nav{
+				margin: 0 auto;
+				width: 100%;
+				text-align: center;
+			}
+		}
+		p{
+			text-align: center !important;
+		}
+    }
+	.footer-info{
+		padding-top: 200px;
+    	margin-top: 310px;
+    	@media only screen and (min-width:1351px) and (max-width:1919px){
+			margin-top: 290px;
+		}
+		@media only screen and (min-width:1919px){
+			margin-top: 220px;
+		}
+
+		.footer-address {
+		    margin: 30px 0;
+		}
+		.footer-contact-info{
+			margin-bottom: 30px;
+			color: #fff;
+
+			span {
+			    margin: 0 15px;
+			}
+			.footer-phn{
+				color: $highlight-text;
+			}
+		}
+		ul.footer-social{
+			li{
+				display: inline-block;
+				margin-right: 15px;
+				height: 50px;
+			    width: 50px;
+			    border: 2px solid #fff;
+			    border-radius: 50%;
+			    background-color: transparent;
+
+			    &:hover{
+			    	background-color: $highlight;
+			    	transition: all 0.3s linear;
+			    }
+			    a{
+			    	color: #fff;
+				    font-size: 20px;
+				    line-height: 49px;
+    				padding: 9px 9px;
+			    }
+				img{
+					height: 50px;
+					width: 50px;
+				}
+			}
+			&::before{
+				content: '';
+				width: 60px;
+				background: #fff;
+				height: 3px;
+				display: block;
+				text-align: center;
+				margin: 35px auto;
+			}
+		}
+	}
+
+	.footer-bottom{
+		position: absolute;
+		width: 100%;
+		bottom: 10px;
+		.footer-bottom-container{
+			border-top: 1px solid #fff;
+			padding-top: 10px;
+		}
+		p{
+			font-size: 12px;
+			margin-bottom: 0;
+			margin-top: 7px;
+			.glyphicon-heart{
+				color: #ff3d00;
+			}
+		}
+		.footer-nav{
+			li{
+				display: inline-block;
+				list-style: none;
+
+				a{
+					color: #fff;
+					text-transform: uppercase;
+					font-size: 11px;
+				}
+				&::after{
+					content: '';
+					height: 10px;
+					width: 2px;
+					background: #fff;
+					display: inline-block;
+					margin: 0 5px;
+				}
+			}
+		}
+	}
+}

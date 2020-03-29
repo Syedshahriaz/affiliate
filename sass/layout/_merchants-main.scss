@@ -1,0 +1,188 @@
+#merchants-wrapper{
+	min-height: 730px;
+	background: url(../img/header-bg.jpg) no-repeat;
+}
+img.merchant-intro-ipad {
+    position: absolute;
+    z-index: 999;
+    top: -345px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    max-width: 1340px;
+
+    @media only screen and (max-width:1339px){
+    	max-width: 90%;
+		top: -285px;
+    }
+
+    @media only screen and (max-width:980px){
+		top: -205px;
+	    transform: scale(1.5,1.5);
+	}
+	@media only screen and (min-width:981px) and (max-width:1024px){
+		top: -265px;
+	    transform: scale(1.2, 1.2);
+	}
+    
+}
+#merchant-feature{
+	height: 375px;
+	background-color: #ffffff;
+	position: relative;
+	@media only screen and (max-width:980px){
+		
+    }
+    @media only screen and (max-width: 767px){
+    	height: auto;
+    	margin: 50px 0;
+    }
+	.merchant-feature-container{
+		    background: #ffffff;
+		    width: 1250px;
+		    min-height: 400px;
+		    z-index: 999;
+		    position: absolute;
+		    top: -300px;
+		    left: 0;
+		    right: 0;
+		    margin: 0 auto;
+		    padding: 50px 100px;
+		    border-radius: 20px;
+		    @media only screen and (max-width:1153px){
+				width: 100%;
+				padding: 60px 40px;
+				top: -400px;
+		    }
+		    @media only screen and (max-width: 767px){
+		    	padding: 0px 0px;
+		    	position: relative;
+		    	top: 0;
+		    }
+		.merchant-feature-title{
+			font-size: 35px;
+			text-align: center;
+			font-weight: 400;
+			margin-bottom: 40px;
+    		margin-top: 10px;
+    		@media only screen and (max-width:980px){
+				font-size: 20px;
+		    }
+		}
+		.merchant-feature-item{
+			padding: 50px 40px;
+		    box-shadow: 0 0 43px #d6d6d6;
+		    border-radius: 20px;
+		    margin-bottom: 20px;
+		    min-height: 310px;
+		    text-align: center;
+		    
+		    @media only screen and (max-width:767px){
+				min-height: inherit;
+				padding: 40px 40px;
+				text-align: center;
+		    }
+			@media only screen and (max-width:980px){
+		    	min-height: 310px;
+				min-height: 310px;
+				padding: 40px 40px;
+			}
+
+		    img{
+		    	max-width: 78px;
+				max-height: 54px;
+		    }
+			h4{
+				font-size: 20px;
+				font-weight: $semibold-text;
+				margin-top: 25px;
+				margin-bottom: 15px;
+			}
+			p{
+				font-size: 15px;
+				max-height: 42px;
+    			overflow: hidden;
+			}
+		}
+	}
+}
+#merchant-bottom{
+	min-height: 1000px;
+	background: url(../img/merchant/merchant-footer.jpg) no-repeat;
+	background-size: cover;
+	background-position: center;
+	padding-top: 250px;
+    text-align: center;
+    padding-right: 100px;
+
+    @media only screen and (min-width: 1351px){
+    	padding-left: 250px;
+    	padding-right: 250px;
+    }
+    
+    @media only screen and (max-width:980px){
+		padding-top: 190px;
+    }
+	@media only screen and (max-width:767px){
+	    padding-top: 60px;
+		text-align: center;
+		max-height: initial;
+		height: auto;
+		min-height: 1000px;
+		background-size: cover;
+		.md-title {
+		    font-size: 20px;
+		}
+	}
+
+    h1{
+    	margin-top: 0;
+    	margin-bottom: 0;
+    	line-height: 1;
+		span{
+			color: $highlight-text;
+		}
+    }
+    p{
+		margin-top: 40px;
+		font-size: 18px;
+		@media only screen and (max-width:980px){
+			font-size: 15px;
+	    }
+		@media only screen and (max-width:767px){
+			margin-top: 30px;
+			font-size: 13px;
+		}
+    }
+    button{
+    	margin-top: 30px;
+    }
+    ul.merchant-partners{
+    	list-style: none;
+    	padding: 0;
+    	margin: 20px 0;
+    	text-align: center;
+    	width: 100%;
+    	li{
+    		display: inline-block;
+    		margin: 0 30px;
+    		@media only screen and (max-width:767px){
+				margin: 15px !important;
+			}
+    		a{
+    			img{
+    				max-width: 108px;
+    				max-height: 65px;
+    				@media only screen and (max-width:767px){
+						max-width: 80px;
+	    				max-height: 65px;
+	    			}
+    			}
+    		}
+			@media only screen and (max-width:767px){
+	    		display: block;
+				margin: 30px 30px;
+			}
+    	}
+    }
+}

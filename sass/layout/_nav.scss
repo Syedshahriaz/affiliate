@@ -1,0 +1,90 @@
+/* ==|====================
+   Layout/Nav
+   ======================= */
+
+.l-nav {
+}
+.navbar-toggle{
+	background-color: #323232;
+	span{
+		background-color: #fff;
+	}
+}
+.top-nav{
+	height: 30px;
+	width: 100%;
+	background-color: #323232;
+	color: #fff;
+	font-size: 13px;
+	font-weight: 400;
+
+	ul{
+		list-style: none;
+		float: right;
+		margin-top: 5px;
+
+		li {
+		    display: inline;
+		    font-weight: 400;
+		    a{
+				font-weight: 400;
+				color: #fff;
+				padding: 10px;
+				font-size: 13px;
+				
+				&:hover{
+					text-decoration: none;
+				}
+			}
+			&.active{
+				>a{
+					color: #d69f22;
+					font-weight: 600;
+				}
+			}
+		}
+		
+	}
+}
+
+.main-logo-area{
+	padding:0;
+	margin:0;
+
+	.main-logo{
+		max-width: 240px;
+		max-height: 80px;
+	}
+}
+
+#main-nav{
+	padding: 0 5px;
+	.navbar-right{
+		li{
+			a{
+				font-size: 14px;
+				text-transform: uppercase;
+				padding: 22px 18px;
+				background-color: transparent;
+				
+				@media only screen and (max-width: 767px){
+					padding: 10px 18px;
+				}
+			}
+
+			&.active{
+				a{
+					color: #d69f22;
+					font-weight: 600;
+					text-decoration: underline;
+				}
+			}
+
+			&:last-child{
+				a{
+					padding-right: 0;
+				}
+			}
+		}
+	}
+}
